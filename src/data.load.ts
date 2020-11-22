@@ -3,6 +3,7 @@ import { ChartInternal } from './core'
 
 ChartInternal.prototype.load = function(targets, args) {
   var $$ = this
+  console.log("load",targets,args);
   if (targets) {
     // filter loading targets if needed
     if (args.filter) {
@@ -44,6 +45,8 @@ ChartInternal.prototype.load = function(targets, args) {
 }
 ChartInternal.prototype.loadFromArgs = function(args) {
   var $$ = this
+
+  console.log("loadFromArgs",args);
 
   $$.resetCache()
 
